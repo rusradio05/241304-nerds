@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Gennadiy Gaysha](https://up.htmlacademy.ru/htmlcss/14/user/241304).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Козлов] (https://htmlacademy.ru/profile/id27386).
 
 ---
 
