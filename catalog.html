@@ -2,13 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <title>Дизайн-студия Нёрдс</title>
   </head>
   <body>
     <header class="page-header">
       <div class="container">
         <div class="nav-bar">
-          <a class="logo"><img src="http://placehold.it/150x100" alt="Nёrd`s-logo"></a>
+          <a class="logo"><img src="http://placehold.it/150x100" width="150" height="100" alt="Дизайн-студия Нёрдс"></a>
           <div class="nav-main">
             <a href="#">Студия</a>
             <a href="#">Клиенты</a>
@@ -16,7 +16,7 @@
             <a href="#">Контакты</a>
           </div>
           <div class="basket">
-            <a href="#"><img src="http://placehold.it/150x100">Корзина</a>
+            <a href="#">Корзина</a>
           </div>
         </div>                  
       </div>
@@ -28,45 +28,51 @@
           <form method="get">
             <h2>Стоимость</h2>
             <div class="price">
-              <div class="price-absolute">
-                <div class="price-min"></div>
-                <div class="price-max"></div>
-              </div>
-              <div class="range">
-                <p>От<span class="min">0</span>До<samp class="max">15000</samp></p>
+              <div class="price-bar">
+                <div class="price-absolute">
+                  <button type="button" class="price-min" name="price-min"></button>
+                  <button type="button" class="price-max" name="price-max"></button>
+                </div>  
               </div>
             </div>
+            <div class="range">
+              <span>От</span>
+              <input class="min" type="text" name="min">0
+              <span>До</span>
+              <input class="max" type="text" name="max">15000
+            </div>
             <h2>Сетка</h2>
-            <div class="grid">
+            <div class="one-choice">
               <label for="adaptive">Адаптивная</label>
               <input type="radio" name="product-type" value="adaptive" id="adaptive" checked>
             </div>
-            <div class="grid">
+            <div class="one-choice">
               <label for="fixed">Фиксированная</label>
               <input type="radio" name="product-type" value="fixed" id="fixed">
             </div>
-            <div class="grid">
+            <div class="one-choice">
               <label for="rubber">Резиновая</label>
               <input type="radio" name="product-type" value="rubber" id="rubber">
             </div>
             <h2>Особенности</h2>
-            <div class="pecularity">
-              <label for="slider">Слайдер</label>
+            <div class="multi-choice">              
               <input type="checkbox" name="slider" id="slider" checked>
+              <label for="slider">Слайдер</label>
             </div>
-            <div class="pecularity">
-              <label for="advantage">Блок преимуществ</label>
+            <div class="multi-choice">
+              
               <input type="checkbox" name="advantage" id="advantage">
+              <label for="advantage">Блок преимуществ</label>
             </div>
-            <div class="pecularity">
+            <div class="multi-choice">
               <label for="news">Новости</label>
               <input type="checkbox" name="news" id="news" checked>
             </div>
-            <div class="pecularity">
+            <div class="multi-choice">
               <label for="gallery">Галерея</label>
               <input type="checkbox" name="gallery" id="gallery">
             </div>
-            <div class="pecularity">
+            <div class="multi-choice">
               <label for="basket">Корзина</label>
               <input type="checkbox" name="basket" id="basket">
             </div>
@@ -76,53 +82,56 @@
         <div class="examples">
           <div class="sorting">
             <form method="get">
-              <h3><span>Сортировать</span></h3>
+              <h3>Сортировать</h3>
               <button class="btn" type="submit">По цене</button>
               <button class="btn" type="submit">По типу</button>
               <button class="btn" type="submit">по функционалу</button>
-              <button class="btn" type="submit" name="down"><img src="http://placehold.it/150x100"></button><!это у меня треугольник вниз>
-              <button class="btn" type="submit" name="up"><img src="http://placehold.it/150x100"></button><!это у меня треугольник вверх> 
+              <button class="btn" type="submit" name="down"></button>
+              <button class="btn" type="submit" name="up"></button>
             </form>
           </div>
           <div class="pictures">
-            <a href="#"><img src="http://placehold.it/150x100"></a>
-            <a href="#"><img src="http://placehold.it/150x100"></a>
-            <a href="#"><img src="http://placehold.it/150x100"></a>
-            <a href="#"><img src="http://placehold.it/150x100"></a>
-            <a href="#"><img src="http://placehold.it/150x100"></a>
-            <a href="#"><img src="http://placehold.it/150x100"></a>
+            <a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="Aviator"></a>
+            <a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="Sunset"></a>
+            <a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="Forte"></a>
+            <a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="Modern Organic Thai"></a>
+            <a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="Avenue"></a>
+            <a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="Dovetail"></a>
           </div>
           <div class="pages">
              <a class="btn" class="current">1</a>
              <a class="btn" href="#">2</a>
              <a class="btn" href="#">3</a>
-             <a class="btn" href="#">Следующая</a>  
+             <a class="btn next" href="#">Следующая</a>  
           </div>
         </div>
       </div>
     </main>
     <footer class="page-footer">
-      <div class="container>">
-        <div class="map-wrapper">
-          <img src="http://placehold.it/150x100" alt="Nёrd`s на карте">
-          <div class="absolute">
-            <div class="container">
-              <h3><span>Nёrd`s design studio</span></h3>
-              <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-              <p><a href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
-              <a href="mailto:rusradio05@gmail.com">Напишите нам</a> <!в отличие от псевдопротокола tel эта ссылка у меня почему-то не работает(((>
-              <img src="http://placehold.it/150x100"><!это круглый указатель местонахождения самой конторы>
-            </div>
-          </div>
-        </div>
-        <div class="footer-social">
-          <h2>Давайте дружить, это выгодно!</h2>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-          <a class="btn social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="btn social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="btn social-btn social-btn-inst" href="#">Инстаграм</a>
-        </div>
-      </div>
+      <div class="map-wrapper">
+         <img src="http://placehold.it/150x100" width="150" height="100" alt="Nёrd`s на карте">
+         <div class="absolute">
+           <div class="container">
+             <h3><span>Nёrd`s design studio</span></h3>
+             <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+             <p><a href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
+             <a href="mailto:rusradio05@gmail.com">Напишите нам</a>
+           </div>
+         </div>
+       </div>
+       <div class="container>">
+         <div class="footer-social">
+           <div class="social-icons">
+             <a class="btn social-btn social-btn-vk" href="#">Вконтакте</a>
+             <a class="btn social-btn social-btn-fb" href="#">Фейсбук</a>
+             <a class="btn social-btn social-btn-inst" href="#">Инстаграм</a>
+           </div>
+           <div class="social-text">
+             <h2>Давайте дружить, это выгодно!</h2>
+             <p>Скидка 10% для друзей из социальных сетей.</p>
+           </div>   
+         </div>
+       </div>
     </footer>
   </body>
  </html>
