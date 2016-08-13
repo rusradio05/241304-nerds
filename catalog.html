@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Дизайн-студия Нёрдс</title>
+    <title>Дизайн-студия Нёрдс: разработка веб-сайтов, приложений и презентаций</title>
   </head>
   <body>
     <header class="page-header">
@@ -36,43 +36,44 @@
               </div>
             </div>
             <div class="range">
-              <span>От</span>
-              <input class="min" type="text" name="min">0
-              <span>До</span>
-              <input class="max" type="text" name="max">15000
+              <form action="#" type="get">
+                <span>От</span>
+                <input class="min" type="text" name="min-meaning">0
+                <span>До</span>
+                <input class="max" type="text" name="max-meaning">15000
+              </form>
             </div>
             <h2>Сетка</h2>
-            <div class="one-choice">
+            <div class="choice">
               <label for="adaptive">Адаптивная</label>
               <input type="radio" name="product-type" value="adaptive" id="adaptive" checked>
             </div>
-            <div class="one-choice">
+            <div class="choice">
               <label for="fixed">Фиксированная</label>
               <input type="radio" name="product-type" value="fixed" id="fixed">
             </div>
-            <div class="one-choice">
+            <div class="choice">
               <label for="rubber">Резиновая</label>
               <input type="radio" name="product-type" value="rubber" id="rubber">
             </div>
             <h2>Особенности</h2>
-            <div class="multi-choice">              
+            <div class="choice">              
               <input type="checkbox" name="slider" id="slider" checked>
               <label for="slider">Слайдер</label>
             </div>
-            <div class="multi-choice">
-              
+            <div class="choice">            
               <input type="checkbox" name="advantage" id="advantage">
               <label for="advantage">Блок преимуществ</label>
             </div>
-            <div class="multi-choice">
+            <div class="choice">
               <label for="news">Новости</label>
               <input type="checkbox" name="news" id="news" checked>
             </div>
-            <div class="multi-choice">
+            <div class="choice">
               <label for="gallery">Галерея</label>
               <input type="checkbox" name="gallery" id="gallery">
             </div>
-            <div class="multi-choice">
+            <div class="choice">
               <label for="basket">Корзина</label>
               <input type="checkbox" name="basket" id="basket">
             </div>
@@ -80,15 +81,13 @@
           </form>
         </div>
         <div class="examples">
-          <div class="sorting">
-            <form method="get">
+          <div class="sorting">            
               <h3>Сортировать</h3>
-              <button class="btn" type="submit">По цене</button>
-              <button class="btn" type="submit">По типу</button>
-              <button class="btn" type="submit">по функционалу</button>
-              <button class="btn" type="submit" name="down"></button>
-              <button class="btn" type="submit" name="up"></button>
-            </form>
+              <a href="#" class="sort-type">По цене</a>
+              <a href="#" class="sort-type">По типу</a>
+              <a href="#" class="sort-type">по функционалу</a><!--не знаю, как задаются разные get-параметры этим ссылкам, определяющим тип сортировки-->
+              <a href="#" class="sort-direction"></a>
+              <a href="#" class="sort-direction"></a><!--так же не понимаю, как реализовать сортировку--> 
           </div>
           <div class="pictures">
             <a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="Aviator"></a>
